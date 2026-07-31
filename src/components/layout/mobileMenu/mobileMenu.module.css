@@ -1,0 +1,171 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  visibility: hidden;
+  border: none;
+  background-color: rgba(7, 18, 28, 0.58);
+  opacity: 0;
+  cursor: pointer;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+}
+
+.overlayVisible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  width: min(88vw, 380px);
+  height: 100vh;
+  padding: 22px;
+  overflow-y: auto;
+  background-color: #ffffff;
+  box-shadow: -20px 0 50px rgba(8, 21, 33, 0.18);
+  transform: translateX(105%);
+  transition: transform 0.32s ease;
+}
+
+.open {
+  transform: translateX(0);
+}
+
+.menuHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #e8edf1;
+}
+
+.mobileLogo {
+  display: inline-flex;
+  align-items: center;
+}
+
+.mobileLogo img {
+  width: auto;
+  max-width: 180px;
+  height: 58px;
+  object-fit: contain;
+}
+
+.closeButton {
+  position: relative;
+  width: 42px;
+  height: 42px;
+  border: 1px solid #dfe6eb;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.closeButton span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 18px;
+  height: 2px;
+  background-color: #19344c;
+}
+
+.closeButton span:first-child {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.closeButton span:last-child {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.mobileNavigation {
+  padding-top: 22px;
+}
+
+.mobileNavigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mobileNavigation li {
+  border-bottom: 1px solid #edf1f4;
+}
+
+.mobileNavigation a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 2px;
+  color: #1b2c3b;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 750;
+  text-transform: uppercase;
+}
+
+.mobileNavigation a span {
+  color: #e87522;
+  font-size: 1.4rem;
+}
+
+.contactArea {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 32px;
+  padding: 22px;
+  border-radius: 12px;
+  background-color: #112f48;
+}
+
+.contactLabel {
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.phone {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
+.quoteButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  margin-top: 8px;
+  border-radius: 5px;
+  background-color: var(--color-accent);
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.84rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.quoteButton:hover {
+  background-color: var(--color-accent-dark);
+  transform: translateY(-2px);
+}
+
+@media (min-width: 1021px) {
+  .overlay,
+  .mobileMenu {
+    display: none;
+  }
+}
