@@ -34,7 +34,7 @@ export function MobileMenu({
             onClick={onClose}
           >
             <img
-              src="/images/company/logo.png"
+              src="/images/company/cebeci-logo.png"
               alt="Cebeci İş Makineleri"
             />
           </a>
