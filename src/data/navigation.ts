@@ -22,16 +22,6 @@ export const navigationItems: NavigationItem[] = [
     href: '/urun-gruplari',
   },
   {
-    id: 5,
-    label: 'Markalar',
-    href: '/markalar',
-  },
-  {
-    id: 6,
-    label: 'Katalog',
-    href: '/katalog',
-  },
-  {
     id: 7,
     label: 'İletişim',
     href: '/iletisim',

@@ -20,16 +20,6 @@ const footerLinks = [
     id: 4,
     label: 'Ürün Grupları',
     href: '/urun-gruplari',
-  },
-  {
-    id: 5,
-    label: 'Markalar',
-    href: '/markalar',
-  },
-  {
-    id: 6,
-    label: 'Katalog',
-    href: '/katalog',
   }
 ]
 
@@ -116,13 +106,11 @@ export function Footer() {
                 <div>
                   <strong>Telefon</strong>
 
-                  <a href="tel:+903224281122">
-                    +90 322 428 11 22
-                  </a>
-
-                  <a href="tel:+903224287766">
-                    +90 322 428 77 66
-                  </a>
+                  <p style={{ margin: '5px 0 0 0' }}>
+                    <a href="tel:+903224281122">0 322 428 11 22</a><br />
+                    <a href="tel:+903224287766">0 322 428 77 66</a><br />
+                    <a href="tel:+905322326452">0 532 232 64 52 (Sorumlu: Ahmet Cebeci)</a>
+                  </p>
                 </div>
               </div>
 

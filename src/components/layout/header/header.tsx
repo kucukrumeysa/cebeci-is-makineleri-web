@@ -23,9 +23,13 @@ export function Header() {
         <div className={styles.topBar}>
           <div className={styles.topBarContainer}>
             <div className={styles.topBarLeft}>
-              <a href="tel:+903221234567">
+              <a href="tel:+903224281122">
                 <span aria-hidden="true">☎</span>
-                +90 322 123 45 67
+                0 (322) 428 11 22
+              </a>
+              <a href="tel:+905322326452">
+                <span aria-hidden="true">📱</span>
+                0 (532) 232 64 52 (Ahmet C.)
               </a>
 
               <a href="mailto:info@cebeciismakineleri.com">
@@ -107,8 +111,8 @@ export function Header() {
             <div className={styles.quickContact}>
               <span>Hızlı destek hattı</span>
 
-              <a href="tel:+903221234567">
-                +90 322 123 45 67
+              <a href="tel:+903224281122">
+                0 (322) 428 11 22
               </a>
             </div>
           </div>

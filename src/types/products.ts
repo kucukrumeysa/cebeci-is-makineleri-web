@@ -1,11 +1,12 @@
 export interface Product {
-  id: number
+  id: string
   name: string
   slug: string
+  brand?: string
   category: string
-  shortDescription: string
+  shortDescription?: string
   image: string
-  featured: boolean
+  featured?: boolean
   imageScale?: number
   imagePosition?: string
 }
